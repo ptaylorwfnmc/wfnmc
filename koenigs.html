@@ -1,0 +1,248 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- InstanceBegin template="/Templates/AMTblank.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<LINK REL="SHORTCUT ICON" HREF="http://www.amt.edu.au/amticon.ico">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Australian Mathematics Trust - The Bridges of K&ouml;nigsberg</title>
+<!-- InstanceEndEditable --><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	background-color: #26406B;
+}
+.style1 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 24px;
+}
+.style2 {
+	font-family: Arial;
+	font-size: 12px;
+}
+body,td,th {
+	font-family: Arial;
+	font-size: 13px;
+	color: #000000;
+}
+-->
+</style>
+<!-- InstanceBeginEditable name="head" --><!-- InstanceEndEditable -->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/contact_over.gif','images/home_over.gif','images/whats_over.gif','images/events_over.gif','images/parents_over.gif','images/book_over.gif','images/people_over.gif','images/activity_over.gif','images/links_over.gif','images/about_over.gif')">
+<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><table width="768" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+      <tr align="center" valign="top">
+        <td colspan="5"><img src="images/banner.jpg" width="768" height="150" align="middle"></td>
+        </tr>
+      <tr>
+        <td width="26" height="304">&nbsp;</td>
+        <td width="125" align="left" valign="top"><table border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td><table border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td><a href="default.htm" target="_top" onClick="MM_nbGroup('down','group1','blank','',1)" onMouseOver="MM_nbGroup('over','blank','','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/blank.gif" alt="" name="blank" width="125" height="11" border="0" onload=""></a></td>
+              </tr>
+              <tr>
+                <td><a href="default.htm" target="_top" onClick="MM_nbGroup('down','group1','home','',1)" onMouseOver="MM_nbGroup('over','home','images/home_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img src="images/home.gif" alt="" name="home" width="125" height="23" border="0" onload=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line1" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+             
+              <tr>
+                <td><a href="events.html" target="_top" onClick="MM_nbGroup('down','group1','events','',1)" onMouseOver="MM_nbGroup('over','events','images/events_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="events" src="images/events.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              
+              
+              <tr>
+                <td><img name="line2" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="prices2013.html" target="_top" onClick="MM_nbGroup('down','group1','competition','',1)" onMouseOver="MM_nbGroup('over','competition','images/compreg_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="competition" src="images/compreg.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+             
+                <tr>
+                <td><img name="line3" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="parents.html" target="_top" onClick="MM_nbGroup('down','group1','forparents','',1)" onMouseOver="MM_nbGroup('over','forparents','images/parents_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="forparents" src="images/parents.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+             
+             
+             <tr>
+                <td><img name="line4" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="http://www.amtt.com.au/" target="_top" onClick="MM_nbGroup('down','group1','bookshop','',1)" onMouseOver="MM_nbGroup('over','bookshop','images/book_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="bookshop" src="images/book.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line5" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="people.html" target="_top" onClick="MM_nbGroup('down','group1','people','',1)" onMouseOver="MM_nbGroup('over','people','images/people_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="people" src="images/people.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line6" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="internat.html" target="_top" onClick="MM_nbGroup('down','group1','activity','',1)" onMouseOver="MM_nbGroup('over','activity','images/activity_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="activity" src="images/activity.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line7" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+               <tr>
+                <td><a href="previouspostings.html" target="_top" onClick="MM_nbGroup('down','group1','previous','',1)" onMouseOver="MM_nbGroup('over','previous','images/whats_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="previous" src="images/whats.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line8" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="external.html" target="_top" onClick="MM_nbGroup('down','group1','links','',1)" onMouseOver="MM_nbGroup('over','links','images/links_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="links" src="images/links.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line9" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+                         
+              <tr>
+                <td><a href="about.html" target="_top" onClick="MM_nbGroup('down','group1','aboutus','',1)" onMouseOver="MM_nbGroup('over','aboutus','images/about_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="aboutus" src="images/about.gif" border="0" alt="" onLoad=""></a></td>
+              </tr>
+              <tr>
+                <td><img name="line10" src="images/line.gif" border="0" alt="" onLoad=""></td>
+              </tr>
+              <tr>
+                <td><a href="email.html" target="_top" onClick="MM_nbGroup('down','group1','contactus','',1)" onMouseOver="MM_nbGroup('over','contactus','images/contact_over.gif','',1)" onMouseOut="MM_nbGroup('out')"><img name="contactus" src="images/contact.gif" border="0" alt="" onLoad=""></a>
+ 
+ <img src="images/line.gif" width="125" height="7" border="0">            
+<a href="http://twitter.com/austmathstrust"><img src="images/twitter-logo.png" name="Twitter" width="24" height="24" border="0"></a>         
+   <a href="http://www.facebook.com/pages/Canberra-Australia/Australian-Mathematics-Trust/104872292905931?ref=ts"><img src="images/facebook-logo.jpg" name="Facebook" width="24" height="24" border="0"></a>               
+                
+                </td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+        <td width="40">&nbsp;</td>
+        <td width="477" rowspan="3" align="left" valign="top"><!-- InstanceBeginEditable name="Content" -->
+          <h3>Mathematics Competitions December 2000 </h3>
+          <h4>What <em>Ever </em> Happened to Those Bridges? </h4>
+          <h4>Peter Taylor</h4>
+          <h4>Australian Mathematics Trust, University of Canberra </h4>
+          <p>If I was to be a mathematical tourist, K&ouml;nigsberg was always at the top of my list. The story of the bridges, which inspired Euler to develop what was to become graph theory, and in due course the basis to the theory of computer networks, was always to me one of the most fascinating. </p>
+          <p>In recent years the Australian Mathematics Trust has issued a number of T Shirts featuring famous mathematicians. The 1997 T Shirt, featuring Euler and the seven bridges, remains the one most in demand. The fascination of the seven bridges has also been easy to convey to average citizens, unaware of the mathematical detail, but who can comprehend the problem and respond, with interest. </p>
+          <p align="left"><img src="images/tseule.jpg" alt="Euler t-shirt" width="344" height="289"></p>
+          <p>  Most of this article will be a part of my diary on the occasion of recently being able to visit K&ouml;nigsberg, or as it is known now, Kaliningrad. But first some background material. </p>
+          <p>I am not an expert on this, but it seems that K&ouml;nigsberg, on the River Pregel, was founded some time in the 13th century by Bohemian King Ottokar II, leading the Teutonic knights. A castle was built before 1283. The region was Prussia, in fact a Baltic nation, its people speaking a Baltic language in the same group as Lithuanian and Latvian. It included also the region including the cities known in German as Danzig and Marienberg (the original Prussian capital). German colonisation began after 1283 when the knights had finally suppressed Prussian tribes. The capital was originally Marienburg but this was moved to K&ouml;nigsberg in the mid 15th century. </p>
+          <p>Over the next centuries Prussia was variously attacked and/or occupied by Polish and Swedish forces, and later Napoleon. K&ouml;nigsberg University was founded in 1544 and in 1618 the territory reverted effectively from Poland to the German State of Brandenburg after a royal marriage. The people over the centuries gradually became assimilated into the German culture. The last evidence of the Prussian language being spoken is in the mid 19th century, and only a little record of the language remains. In the meantime there are regions further west, now in north western Poland, which were also assimilated into German culture, and considered by Germany as part of Germany within the province of Prussia. This region, which included the German city of Stettin and the region of Pomerelia, was eventually described as part of Prussia but was not originally so. The original Prussia became known as East Prussia. But I will refer to Prussia as this original area, i.e that containing K&ouml;nigsberg, Danzig and Marienburg. The northern part, known in German as <em>Das n&ouml;rdliche Ostpreussen </em> (the northern part of East Prussia and containing K&ouml;nigsberg) became the Kaliningrad Oblast (region) of Russia after the war. The southern part, containing Danzig and Marienburg, became part of Poland, with these two towns renamed as Gdansk and Malbork. </p>
+          <p>K&ouml;nigsberg was probably at its peak in the late 18th century. It was the seat of the kings of Prussia, and they were crowned in the castle. The streets were laid out about the town and two islands on the Pregel River, connected by seven bridges. </p>
+          
+          <p align="left"><img src="images/koenigs1.gif" alt="Map of K&ouml;nigsberg, 18th century" width="415" height="215"><br>
+          <p>One island is large and formed by a new course which had been established by the river. The other island is smaller and occupies the central part of the city. This island contained the cathedral, which had been built between 1327 and 1380 in the Gothic style. The cathedral had once been damaged by fire, with both towers at the southern end destroyed, and only the southern of the two had been rebuilt. My Lonely Planet of the region shows a photo of the cathedral in the early 1990s, only a facade really after war-time damage, but it has now been almost rebuilt, despite the predictions of the Lonely Planet. </p>
+          <p>The British heavily bombed the central part of the city in 1944 and the Germans applied very strong resistance here to Russian attacks in 1945. In fact the battle for K&ouml;nigsberg took three months before the Soviet army prevailed. It is not surprising then that there was much damage. The castle was damaged as a result of the war, but it was considered to be restorable. However the Soviets, despite international condemnation, in 1968 dynamited the castle and cleared the area to form a central square dominated by the House of Soviets, a monstrosity originally designed as a monument to the Soviet system, but never completed. </p>
+          <p>During its heyday, there was much speculation by the citizens of K&ouml;nigsberg as to whether one could make a complete tour of the town crossing each of the seven bridges exactly once. This was the time of Leonhard Euler, now based at St Petersburg, who tried to solve the problem. It is well-known now that he showed why the tour was not possible, and that his proof developed the branch of mathematics known as Graph Theory, of fundamental importance to networks as we find them in computers today. </p>
+          <p>The city of Kaliningrad was closed to Western tourists until 1991. Like Vladivostock in the east of the USSR, it was of strategic naval significance. In the case of Kaliningrad this was the closest USSR port to the North Atlantic. Before 1991 it was possible for USSR citizens to visit without immigration control, but few did, and I could find no Lithuanian mathematician who had been there and knew of the condition of the bridges. </p>
+          <p align="left">            <img src="images/koenigs2.jpg" alt="Map of Kaliningrad, 2000" width="455" height="450">          
+          <p>The Lonely Planet refers, rightly, to the mausoleum of Immanuel Kant maybe K&ouml;nigsberg's most imporatant citizen, still in place at the Cathedral, but makes no mention of the bridges. I asked many Western mathematicians over the years and got no convincing response, although I did receive advice possibly ranging from no surviving bridge to even 8 bridges now being there. I was interested to find out for myself. </p>
+          <p>Despite the fact that Kaliningrad is now open, it is not easily accessible. By air Kaliningrad is only served domestically by Aeroflot (also one flight per week to Hamburg) and internationally by SAS (four flights weekly to Copenhagen). It seemed to be that the easiest way for me would be to go to Lithuania, where a friend of mine, Romualdas Kasuba, Deputy Leader of the Lithuanian IMO team said he could get me there over land. He said that Lithuanian citizens could cross without a visa and he could get me there. </p>
+          <p>I finally received an opportunity to be in Lithuania in October this year. Before going, I booked appropriate accommodation in the Hotel Kaliningrad, seemingly within walking distance of the bridges precinct, through Russian Intourist, and obtained on the basis of this booking a Russian Visa. My wife Lois also travelled with me. We were not able to book land transport from Australia, so we relied on travelling under the auspices of Romualdas. </p>
+          <p>From Vilnius there are options. An old bus takes nine hours each way, but has awkward timetables going deep into the night. The train is a bit quicker, but generally is a train between Kaliningrad and either Moscow or St Petersburg, again travelling through Vilnius in the middle of the night. The one train we saw looked very old. Car rental companies did not want to rent a car going in to Russia. We ended up making our visit in with a teacher from Kaunas, Leonus Narkevicius, who was happy to take us in his car. He also proved to be excellent company during the two days we took (mostly on the road). The rest of this paper is extracted from my diary. </p>
+          <p>Because everyone, including Leonas, had stayed up between 0200 and 0350 the night before to watch Lithuania defeat Australia for the Olympic Games Men's Basketball Bronze Medal (Basketball being the national sport of Lithuania) we did not leave until 1030. </p>
+          <p>We made the first part of the trip, through Marijampole. At 1250 we arrived at the Lithuanian border check point at the eastern end of Kaliningrad Oblast. We then found that there was a very long queue to get through. It took us in fact 5 hours, even though we were originally car number 38 in the queue on the Lithuanian side, to get through both check-points and get through to Russia. Then, with Kalinigrad on Moscow time, we did not get into Kalinigrad until 2115. We booked into the Hotel Kaliningrad, which is excellent. </p>
+          <p>On the Monday morning we awake to a pleasant surprise. The Hotel looks over what is clearly the bridges precinct, and the good news is that the cathedral appears to have been rebuilt. The whole island region looks beautiful, with autumn trees everywhere, although some uglier buildings outside the region form a less attractive backdrop. </p>
+          <p>Unfortunately Leonas has a migraine (maybe not helped by his late night watching the basketball). He goes back to sleep, missing the bridges, but hopefully able to check out before 1200 and drive us back to Lithuania. </p>
+          <p>Lois and I commence our walk after breakfast. What was I to expect? The Lonely Planet map did not inspire much confidence that we would find any of the original bridges. I felt that from the map there appeared to be a chance that the bridge connecting the islands may still exist. </p>
+          <p>We walked down Leninsky Prospekt, the main north-south highway, built by the Russians when they redesigned the town and which appears to substitute for the two western bridges. When we walk down to the island this is confirmed. The path around the island is nicely preserved and you can see where the two western bridges, and in fact the other two western bridges connecting to the small island were, but they are missing.</p>
+          <p align="left"><img src="images/koenigs5.jpg" alt="Region of mission bridge, north-eastern bridge in background, October 2000" width="477" height="259"></p>
+          <p>So far 0 out of 4, although a new bridge replaces both western bridges. </p>
+          <p>We could see the cathedral through the autumn trees and it did look beautiful. Now we came to the interesting part, where we had more expectation. We walked around the corner and there is, surely, the bridge which connects the islands. Just a walk-bridge, but with old style lace railings and wooden work. It must be the same one. We took some photos.</p>
+          <p align="left"><img src="images/koenigs3.jpg" alt="The cathedral and bridge connecting islands, October 2000" width="477" height="259">            
+          <p>The cathedral is close to this bridge, making a beautiful backdrop. Now came the most difficult part. The south-eastern bridge, according to my old map of K&ouml;nigsberg, and also the recent map which shows a road bridge in apparently the same place, is a long way away, maybe a kilometre. We have to walk away from the island precinct, along about three tram stops, old and rusting apartments, some river front land with derelict buildings with a sign, promising in Russian to be redeveloped as restaurants. A great idea in a great location, but it does not look imminent. Finally we turned the corner and there is an old bridge in the right spot. The tram and a road go over it. This bridge might be the Eulerian bridge also. It looks fairly old. </p>
+          <p>Finally we went back to the nicer part to look for the north-eastern bridge. There is an old bridge in the right spot and it looks like a genuine old bridge, with steel lace-work and a road for cars and a tram-line. </p>
+          <p align="left"><img src="images/koenigs4.jpg" alt="The north-eastern bridge, October 2000" width="477" height="259">            
+          <p>Despite the fact that the castle and many of the central streets with German buildings are now missing, the cathedral is now virtually rebuilt, and is very much worth a visit. The tomb of Immanuel Kant is impressively preserved, and there are also memorials to several former dignitaries. A pleasant surprise is that inside the front of the cathedral is a significant museum. One walks up a narrow spiral staircase (entry fee 40 roubles or 3 DM). Here can be found a beautiful mural of K&ouml;nigsberg at its peak in the late 18th century. It shows the street layout and 6 of the bridges (the south-eastern bridge is out of the picture). A local girl who speaks English, in addition to Russian, German and Swedish was there and talked about her interest in conserving the site. Her mother had been born in the Urals. Her father was born in 1948 in Kaliningrad after his parents, from Poland and Russia had been among the early immigrants to fill the post-war void. She confirmed that three bridges survived, the same ones we had detected. She said all were there until the war, but that the two western bridges had also survived the war, only to be replaced by the Russians with Leninsky Prospekt. Apparently the two other bridges connecting the mainland to the small island had been destroyed during the war. </p>
+          
+          <p align="left"><img src="images/koenigs6.jpg" alt="Another view of the north-eastern bridge, October 2000" width="477" height="259">            
+          <p>We walk back towards the hotel. Also on the island there are some weird sculptures, apparently celebrating some parts of Russian history. As we were about to leave the area an old man came up to me, very excited. He was interested in what I was doing as I obviously looked like a tourist. He was ethnically Ukrainian, born in Minsk (Belarus) but had been a physics professor at the University. We could only communicate in German. He wanted to show us everything again. We told him of our time shortage and he barely obliged. He showed us where the synagogue had been, opposite the cathedral. Presumably this did not survive even before the war. He showed us again the grave of philosopher Immanuel Kant and those of several former University professors. However he did say that even though there is a south-eastern bridge still there it is not the one of Euler's time. He said that it had been replaced by the Germans in 1935. He did confirm that the other two old bridges are the original Euler bridges. I think I am convinced by the authenticity of his statement. </p>
+          <p>So it seems that two Eulerian bridges, complete with original lace-work, still survive. Two survived the war but were replaced by the Russians with the freeway construction, two were destroyed during the war, and the seventh survives, but is a version rebuilt by Germans in 1935. </p>
+          <p>We eventually collect Leonas, who had recovered. He has never seen the bridges, but will come back with his wife, also a mathematics teacher, when he thinks border crossings will be easier. We actually returned to Lithuania by the northern check-point, which is on the road through to Riga. This is at the town of Sovetsk, formerly the German town of Tilsit and the second city of Kaliningrad Oblast. It looks interesting and was probably the northernmost Prussian town. We were able to cross the border in just one and a quarter hours, almost acceptable. But on getting through to Lithuania, we notice that the queue of cars trying to get into Russia is about three kilometres long. Given that only three are processed every 15 minutes or so, it looks as though the delay was well over a day. This totally discourages me from trying a car crossing in the near future. We were very lucky, given the constraints we had, to see Kaliningrad at all. The best way must be to find a plane connection, with Aeroflot or SAS, or alternatively I have since learned also that there are ferries from Germany throughout the year and from Poland during parts of the year. </p>
+          <p>Some final thoughts? The borders of Europe have changed frequently, and there are many historic cities. However I would say from my brief time in K&ouml;nigsberg, this was the most moving. K&ouml;nigsberg represents almost everything which has happened in Europe. It has been originally a base of the Teutonic knights in the 13th century. It became the capital of Prussia, a Baltic race which eventually became assimilated with Germany, seeing its language disappear by about 1850. It became a principal city of Germany and one of science and the arts. It was conquered by many armies, some in living memory. The most recent conquerors certainly included Napoleon and Stalin and the town was fiercely defended by Hitler. After the Second World War the inhabitants were largely killed, wounded and/or deported. All of the inhabitants seem to be post-war Russian immigrants, some speaking German. The Russians have been criticised for much of the destruction and pollution and I assume that this criticism was earlier valid. However, I feel that things could have been much worse. The inhabitants are now seeing a new pride in the history of this city and are impressively restoring it. The water and air seem to be better than reported in recent years. The city is now an open and modern city, tax-free, which the Russians are show-casing, and I am optimistic that in the future K&ouml;nigsberg will become more accessible (there has been talk of restoring the original name, as had happened with Leningrad). It certainly has a special place in the history of mathematics. </p>
+          <h4>Post Script </h4>
+          <p>Following the publication of this article on the internet, I have been contacted by Bob Merkin, of Northampton Massachusetts, who advises that the island containing the Cathedral was known in German as Kniephof, and the bridges each had names. </p>
+          <p><img src="images/koenignames.gif" alt="Bridge names" width="477" height="257"></p>
+          <p>These names were (northern bridges, from the west) Kr&auml;mer (Shopkeeper) Bridge, Schmied (Blacksmith) Bridge and Holz (Wood, Wooden) Bridge, (southern bridges, from the west) Gr&uuml;n (Green) Bridge, K&ouml;ttel (Guts, Giblets) Bridge and H&ouml;he (High) Bridge, and the island interconnecting bridge was known as Honig (Honey) Bridge. The above diagram, supplied by Bob Merkin, shows the names.</p>
+        <!-- InstanceEndEditable --></td>
+        <td width="100" rowspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="3" rowspan="3" align="left" valign="bottom"><p><img src="images/watermark.gif" width="191" height="200" align="bottom"></p></td>
+        </tr>
+      <tr>
+        <td width="100">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="55" colspan="2" align="left" valign="top">&nbsp;</td>
+        </tr>
+      <tr align="left" valign="bottom">
+        <td height="29" colspan="5"><img src="images/footer.jpg" alt="Copyright 2007 Australian Mathematics Trust, All Rights Reserved" width="768" height="29" align="bottom"></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+<!-- InstanceEnd --></html>
